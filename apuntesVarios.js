@@ -646,10 +646,28 @@ const totalHightier = employees
 /***** Lexical Enviroment: Lugar FISICO donde se asienta el codigo que escribo. Ese  lugar donde se escribe es importante.
 The Execution Context: contains the code that's currently running, and everything that aids in its execution. Hay muchos ambientes lexicos, el que está corriendo en este momento es administrado por el contexto de ejecución. Podria contener cosas adicionales a las que escribí en mi codigo * 
 
+DOS FASES:
+
+1) CREATION PHASE:
+
 Cada vez que se abre el TAB del navegador se crea un
+
 OBJETO GLOBAL (Window) y un This (equivale a Window)
 
+Outer  Enviroment (Every execution context has a reference to its outer environment, and that outer environment is called Lexical Environment.)
+
+Parser => Separa Memory Space para Variables (inicializadas por defecto con el VALOR "undefined") y Funciones
+"HOISTING" 
+
+2) EXECUTION PHASE:
+
+Corre el código.
+
+//RETOMAR  VIDEO DESDE 1:00:00 hs//
+
 Global => QUE NO ESTÁ DENTRO DE UNA FUNCION
+
+ 
 
 * 
 OBJETO: Una colección de pares Nombre: Valor
